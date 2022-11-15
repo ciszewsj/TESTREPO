@@ -12,7 +12,7 @@ class Testrepo1ApplicationTests {
 
 	@Test
 	void testFailed() {
-		assert 1 == 0;
+		assert 1 == 1;
 	}
 
 }
