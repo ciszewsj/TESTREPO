@@ -1,7 +1,0 @@
-name: MyFirstPlugin
-version: '${project.version}'
-main: pl.xvariox.myfirstplugin.MyFirstPlugin
-api-version: 1.19
-prefix: MyPlugin
-authors: [ XvarioX ]
-description: First Plugin
