@@ -13,4 +13,9 @@ public class GetController {
 	public String get(){
 		return "Hello world!";
 	}
+
+	@GetMapping("/message")
+	public String getsecond(){
+		return "Hello Second World!";
+	}
 }
