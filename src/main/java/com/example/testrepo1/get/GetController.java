@@ -18,4 +18,8 @@ public class GetController {
 	public String getsecond(){
 		return "Hello Second World!";
 	}
+	@GetMapping("/test")
+	public String test(){
+		return "Hello Second Test World!";
+	}
 }
