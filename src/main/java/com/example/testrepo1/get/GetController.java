@@ -21,6 +21,8 @@ public class GetController {
 	@GetMapping("/test")
 	public String test(){
 		return "Hello Second Test World!";
+	}@GetMapping("/test2")
+	public String test2(){
+		return "Hello Second Test World!";
 	}
 }
-g
