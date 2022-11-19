@@ -10,4 +10,9 @@ class Testrepo1ApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void testFailed() {
+		assert 1 == 1;
+	}
+
 }
