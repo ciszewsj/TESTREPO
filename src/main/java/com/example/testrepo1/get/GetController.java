@@ -1,7 +1,6 @@
 package com.example.testrepo1.get;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RequestMapping
 public class GetController {
-	@Value("${git.commit.message.short}")
-	private String commitMessage;
+	@Value("${application.name}")
+	private String applicationName;
 
-	@Value("${git.branch}")
-	private String branch;
+	@Value("${build.version}")
+	private String buildVersion;
 
-	@Value("${git.commit.id}")
-	private String commitId;
+	@Value("${build.timestamp}")
+	private String buildTimestamp;
 
 	@GetMapping()
 	public String get() {
@@ -27,7 +26,7 @@ public class GetController {
 
 	@GetMapping("/info")
 	public String info() {
-		return "commitMessage: " + commitMessage + "     branch: " + branch + "     commitId: " + commitId;
+		return "AppName: " + applicationName + "\nVersion: " + buildVersion + "\nTime: " + buildTimestamp;
 	}
 
 
