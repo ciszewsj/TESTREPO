@@ -30,7 +30,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Set version
-      run: mvn versions:set -DnewVersion=$CI_COMMIT_SHORT_SHA"
+      run: mvn versions:set -DnewVersion=$CI_COMMIT_SHORT_SHA
 
     - name: Publish
       run: mvn clean install 
