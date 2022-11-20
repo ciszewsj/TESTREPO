@@ -29,8 +29,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Set version
-      run: mvn versions:set -DnewVersion=$CI_COMMIT_SHORT_SHA
+    - name: Maven Version Bump Action
+      uses: nnichols/maven-version-bump-action@v4
 
     - name: Publish
       run: mvn clean install 
