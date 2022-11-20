@@ -27,7 +27,7 @@ public class GetController {
 
 	@GetMapping("/info")
 	public String info() {
-		return "commitMessage: " + commitMessage + "\nbranch: " + branch + "\ncommitId: " + commitId;
+		return "commitMessage: " + commitMessage + "     branch: " + branch + "     commitId: " + commitId;
 	}
 
 
