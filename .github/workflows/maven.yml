@@ -29,8 +29,12 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Maven Version Bump Action
-      uses: nnichols/maven-version-bump-action@v4
+    - name: Bump Version
+      id: bump
+      uses: nnichols/maven-version-bump-action@v3
+      with:
+        github-token: ${{ secrets.TOKEN }}
+
 
     - name: Publish
       run: mvn clean install 
