@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RequestMapping
 public class GetController {
-	@Value("${application.name}")
-	private String applicationName;
+	@Value("${git.commit.message.short}")
+	private String commitMessage;
 
-	@Value("${build.version}")
-	private String buildVersion;
+	@Value("${git.branch}")
+	private String branch;
 
-	@Value("${build.timestamp}")
-	private String buildTimestamp;
+	@Value("${git.commit.id}")
+	private String commitId;
 
 	@GetMapping()
 	public String get() {
@@ -27,7 +27,7 @@ public class GetController {
 
 	@GetMapping("/info")
 	public String info() {
-		return "AppName: " + applicationName + "\nVersion: " + buildVersion + "\nTime: " + buildTimestamp;
+		return "commitMessage: " + commitMessage + "\nbranch: " + branch + "\ncommitId: " + commitId;
 	}
 
 
