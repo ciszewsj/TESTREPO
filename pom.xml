@@ -11,12 +11,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>TESTREPO1</artifactId>
-<<<<<<< HEAD
     <version>2.7.8</version>
-
-=======
-    <version>2.7.6</version>
->>>>>>> c5f07cd57fa35b105d7a7450fb4420fbdda5cad5
     <name>TESTREPO1</name>
     <description>TESTREPO1</description>
     <properties>
