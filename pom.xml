@@ -35,6 +35,8 @@
     </dependencies>
 
     <build>
+        <finalName>${project.artifactId}-${project.version}-${git.commit.id.describe-short}</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
